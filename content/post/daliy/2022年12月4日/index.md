@@ -29,13 +29,4 @@ tags:
 - 放下助人情结，尊重他人命运，不要为了别人的幸福而牺牲自己的幸福。(最后一句copilot自动加的...)  
 - 当你要和他讲政治的时候，他就开始和你讲科学了。
 
-
-
-
-2022年12月4日19:40:31 测试push
-
-For more information about this theme, check the documentation: https://docs.stack.jimmycai.com/
-
-Want a site like this? Check out [hugo-theme-stack-stater](https://github.com/CaiJimmy/hugo-theme-stack-starter)
-
-> Photo by [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski) on [Unsplash](https://unsplash.com/)
+![](https://wordpress-tangzekk.oss-cn-shanghai.aliyuncs.com/img/0080ZTByly1h5o2g5vlltg30b40b2qvi.gif)
