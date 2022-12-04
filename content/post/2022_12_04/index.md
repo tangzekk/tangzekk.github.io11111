@@ -1,7 +1,7 @@
 ---
 title: 2022年12月4日
 description: 2022年12月4日
-slug: hello-world
+slug: 2022年12月4日
 date: 2022-12-04 11:47:00+0000
 categories:
 - daliy
