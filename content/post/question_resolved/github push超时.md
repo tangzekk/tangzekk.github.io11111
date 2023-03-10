@@ -4,9 +4,9 @@ description: GitHub push超时 问题解决
 slug: GitHub push超时 问题解决
 date: 2022-12-04 11:47:00+0000
 categories:
-       - question_resolved
-  tags:
-       - Example Tag
+- Example Category
+tags:
+- Example Tag
 ---
 
 ```cmd  
