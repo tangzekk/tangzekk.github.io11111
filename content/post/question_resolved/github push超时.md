@@ -4,12 +4,12 @@ description: GitHub push超时 问题解决
 slug: GitHub push超时 问题解决
 date: 2022-12-04 11:47:00+0000
 categories:
-- question_resolved
+       - question_resolved
   tags:
-- github
+       - github
 ---
 
-```cmd
+```cmd  
 22:43:27.893: [tangzekk.github.io] git -c credential.helper= -c core.quotepath=false -c log.showSignature=false add --ignore-errors -A -- content/categories/daliy/_index.md
 22:44:08.555: [tangzekk.github.io] git -c credential.helper= -c core.quotepath=false -c log.showSignature=false add --ignore-errors -A -f -- content/categories/daliy/_index.md
 22:44:08.656: [tangzekk.github.io] git -c credential.helper= -c core.quotepath=false -c log.showSignature=false commit -F C:\Users\kk\AppData\Local\Temp\git-commit-msg-.txt --
