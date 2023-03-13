@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Example Tag on Hugo Theme Stack Starter</title><link>http://tangzekk.github.io/tags/example-tag/</link><description>Recent content in Example Tag on Hugo Theme Stack Starter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 04 Dec 2022 11:47:00 +0000</lastBuildDate><atom:link href="http://tangzekk.github.io/tags/example-tag/index.xml" rel="self" type="application/rss+xml"/><item><title>GitHub push超时 问题解决</title><link>http://tangzekk.github.io/p/github-push%E8%B6%85%E6%97%B6-%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</link><pubDate>Sun, 04 Dec 2022 11:47:00 +0000</pubDate><guid>http://tangzekk.github.io/p/github-push%E8%B6%85%E6%97%B6-%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</guid><description>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">22:43:27.893: [tangzekk.github.io] git -c credential.helper= -c core.quotepath=false -c log.showSignature=false add --ignore-errors -A -- content/categories/daliy/_index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">22:44:08.555: [tangzekk.github.io] git -c credential.helper= -c core.quotepath=false -c log.showSignature=false add --ignore-errors -A -f -- content/categories/daliy/_index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">22:44:08.656: [tangzekk.github.io] git -c credential.helper= -c core.quotepath=false -c log.showSignature=false commit -F C:\Users\kk\AppData\Local\Temp\git-commit-msg-.txt --
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[master e67c347] first test
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1 file changed, 10 insertions(+)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> create mode 100644 content/categories/daliy/_index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">22:44:10.386: [tangzekk.github.io] git -c credential.helper= -c core.quotepath=false -c log.showSignature=false push --progress --porcelain origin refs/heads/master:master
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">fatal: unable to access &amp;#39;https://github.com/tangzekk/tangzekk.github.io.git/&amp;#39;: OpenSSL SSL_read: Connection was aborted, errno 10053
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">22:44:46.748: [tangzekk.github.io] git -c credential.helper= -c core.quotepath=false -c log.showSignature=false push --progress --porcelain origin refs/heads/master:master
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">fatal: unable to access &amp;#39;https://github.com/tangzekk/tangzekk.github.io.git/&amp;#39;: Failed to connect to github.com port 443 after 21112 ms: Timed out
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="解决方案">解决方案&lt;/h3>
+&lt;p>git命令全部走本地代理,需要代理软件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">git config --global http.proxy socks5 127.0.0.1:7890
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global https.proxy socks5 127.0.0.1:7890
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global http.proxy 127.0.0.1:7890
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global https.proxy 127.0.0.1:7890
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">```，,
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Hello World</title><link>http://tangzekk.github.io/p/hello-world/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>http://tangzekk.github.io/p/hello-world/</guid><description>&lt;img src="http://tangzekk.github.io/p/hello-world/cover.jpg" alt="Featured image of post Hello World" />&lt;p>Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!&lt;/p>
+&lt;p>2022年12月4日19:40:31 测试push&lt;/p>
+&lt;p>For more information about this theme, check the documentation: &lt;a class="link" href="https://docs.stack.jimmycai.com/" target="_blank" rel="noopener"
+>https://docs.stack.jimmycai.com/&lt;/a>&lt;/p>
+&lt;p>Want a site like this? Check out &lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
+>hugo-theme-stack-stater&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>Photo by &lt;a class="link" href="https://unsplash.com/@pawel_czerwinski" target="_blank" rel="noopener"
+>Pawel Czerwinski&lt;/a> on &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+>Unsplash&lt;/a>&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
